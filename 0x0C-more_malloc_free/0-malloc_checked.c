@@ -11,10 +11,10 @@
 
 void *malloc_checked(unsigned int b)
 {
-	char *p;
-	
-	p = malloc(b);
-	if (p == NULL)
+	int *s;
+
+	s = malloc(b);
+	if (s == NULL)
 	exit(98);
-	return (p);
+	return (s);
 }
